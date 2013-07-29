@@ -1,0 +1,4 @@
+# Default Configuration File for RankUp, please keep the following format on every line. r1: <RankName><Identifier><Cost>
+identifier: '%'
+r1: Guest%0
+r2: Member%5000

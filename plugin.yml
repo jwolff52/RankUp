@@ -1,0 +1,7 @@
+name: RankUp
+main: me.kingdomscraft.rankup.Rankup
+version: 1.0
+commands:
+    rankup:
+        description: Automatically rank up by paying money to the server!
+        
