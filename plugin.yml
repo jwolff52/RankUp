@@ -1,7 +1,29 @@
 name: RankUp
-main: me.kingdomscraft.rankup.Rankup
-version: 1.0
+main: io.github.jwolff52.rankup.RankUp
+version: 1.1.6
+depend: [Essentials, GroupManager]
 commands:
     rankup:
         description: Automatically rank up by paying money to the server!
-        
+    rankupreload:
+        description: Reload RankUp
+permissions:
+    rankup.*:
+        description: Gives access to all of the RankUp Commands
+        children: 
+            rankup.others: false
+            rankup.self: false
+            rankup.reload: false
+        default: false
+        rankup.others:
+            description: Allows the player to use /rankup on everyone
+            default: false
+        rankup.self: 
+            description: Allows the player to use /rankup on themselves
+            default: true
+        rankup.reload:
+            description: Allows the player to reload the RankUp config
+            default: false
+        rankup.reset:
+            description: Allows the player to reset other players to the Default rank
+            default: false
